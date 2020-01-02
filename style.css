@@ -1,13 +1,20 @@
  
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Raleway|Sacramento&display=swap');
- 
+@import url('https://fonts.googleapis.com/css?family=Lato:700|Montserrat:100&display=swap');
+
 html {
     position: relative;
     min-height: 100%;
+     ;
   }
  *{ 
+
       margin: 0;
       padding: 0;
+ }
+ body{
+  font-family:'Poiret One', cursive;
+
  }
  /*
   .jumbotron {
@@ -134,11 +141,7 @@ color: white;
   /*JUSTIFY TEXT CONTAINER TEXT-SECTION */
      /* MOVING TEXT INSIDE OF CONTAINER*/
      
- 
-section.text-center{ 
-  max-width: 500px;
-  }
-   
+  section.content. {}
 
 
 
