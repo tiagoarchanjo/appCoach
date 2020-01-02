@@ -9,14 +9,14 @@ html {
       margin: 0;
       padding: 0;
  }
+ /*
   .jumbotron {
     background-image: url("https://www.smak.co.za/images/bg.jpg");
     background-size: 100% 100%;
     color: #b0bec5;
     margin-bottom: 0;
-  }
+  }*/
   .navbar-scroll {
-     
     background-color:rgb(255, 255, 255,0.8);
     transition: background-color 0.5s;
     border-bottom:1px solid rgba(0,0,0,0.13);
@@ -37,7 +37,6 @@ html {
     color: #1e1e1e !important;
     text-transform: uppercase;}
  
-
 .navbar .navbar-collapse a::after{
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
@@ -56,8 +55,6 @@ html {
     left: 0; 
    }
   
- 
- 
    @media(max-width: 768px){
       .navbar {background-color:rgb(255,255,255); }
       .navbar-dark .navbar-toggler {background-color:#c7ccd1;} 
@@ -71,53 +68,13 @@ html {
     position: absolute;
     margin-top: -200px;
   }*/
-   
-  
-
-   /* ============================================================
+ /* ============================================================
     PRIMARY STRUCTURE
   ============================================================ */
-  
-
- 
-   /* ============================================================
+ /* ============================================================
     SECTIONS
   ============================================================ */
-  
-  section.module:last-child {
-    margin-bottom: 0;
-  }
-  section.module h2 {
-    margin-bottom: 40px;
-    font-family: "Roboto Slab", serif;
-    font-size: 30px;
-  }
-  section.module p {
-    margin-bottom: 40px;
-    font-size: 16px;
-    font-weight: 300;
-  }
-  section.module p:last-child {
-    margin-bottom: 0;
-  }
-  section.module.content {
-     background-color:#FFFFFF;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  section.module.content:last-child {
-    margin-bottom: 50px;
-  }
-  section.module.parallax {
-     background-position: 0 0;
-    text-align: center;
-    position: relative;
-    
-  }
-
-/*TEXT PARALLAX CUSTOMISER*/
-
-  section.module.parallax h4 {
+ section.module.parallax h4 {
     color:#FFFFFF;
     font-size: 60px;
     line-height: 1;
@@ -128,19 +85,7 @@ html {
     width:100%;
     font-weight: 100;
   }
-  .text-background p{
-     text-align: center;
-        color: #FFFFFF;
-       font-size:50px;
-         position: relative;
-         line-height: 1.8;
-        }
 
- .text-container{
-     margin: 0;
-
- }
-  
   /* TEXT ABOVE OF PARALLAX 1*/
 /*#text-parallax h1{
 z-index: 100;
@@ -168,13 +113,6 @@ color: white;
         z-index:0 ; 
     }
     
-    /* MOVING TEXT INSIDE OF CONTAINER Z-INDEX*/
-
-    .parallax-1 .parallax-container > *{
-        z-index: 10;
-        position: relative;
-     }
-    
     section.module.parallax-2 {
     background-image: url("http://www.planwallpaper.com/static/images/Fall-Nature-Background-Pictures.jpg");
     background-position: 50% 0;
@@ -193,8 +131,18 @@ color: white;
     background-color: rgba(0,123,255,0.4);
     background-blend-mode: screen;
   }
-  
-  @media all and (min-width: 600px) {
+  /*JUSTIFY TEXT CONTAINER TEXT-SECTION */
+     /* MOVING TEXT INSIDE OF CONTAINER*/
+     
+ 
+section.text-center{ 
+  max-width: 500px;
+  }
+   
+
+
+
+     @media all and (min-width: 600px) {
     section.module h2 {
       font-size: 42px;
     }
@@ -256,12 +204,12 @@ color: white;
     text-align: left;
   }
 
-  /*BUTTON*/
+  /*BUTTON
   .btn.blue-gradient{
       padding: 5px 5px;
-  }
+  }*/
 
-  /* TESTEMONIAL **************************************/
+  /* UNDERLINE **************************************/
   h2 {
 	color: #000;
 	font-size: 26px;
