@@ -1,56 +1,72 @@
- *{ 
-      margin: 0;
-      padding: 0;
+ * {
+   margin: 0;
+   padding: 0;
  }
-  /*
+
+ .affix {
+   top: 0;
+   width: 100%;
+   z-index: 9999 !important;
+ }
+
+
+ /*
   .jumbotron {
     background-image: url("https://www.smak.co.za/images/bg.jpg");
     background-size: 100% 100%;
     color: #b0bec5;
     margin-bottom: 0;
   }*/
-  .navbar-scroll {
-    background-color:rgb(255, 255, 255,0.8);
-    transition: background-color 0.5s;
-    border-bottom:1px solid rgba(0,0,0,0.13);
-    border-top:1px solid rgba(0,0,0,0.13) ;
-}
+ .navbar-scroll {
+   background-color: rgb(255, 255, 255, 0.8);
+   transition: background-color 0.5s;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+   border-top: 1px solid rgba(0, 0, 0, 0.13);
+ }
 
-    .navbar-brand img{
-    margin-left:140px;
-    background: black;
+ #nav {
+   margin-left: 140px;
 
-    }
-  
-  .navbar .navbar-collapse {
-    margin-right: 150px;
-     }
+ }
 
-  
-.navbar .navbar-collapse a::after{
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height:2px;
-    left: 50%;
-    position: absolute;
-    background:black;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-    }
+ .navbar .navbar-collapse #nav {
+   margin-right: 150px;
+ }
 
-    .navbar .navbar-collapse a:hover::after {
-    width: 100%; 
-    left: 0; 
+
+ .navbar .navbar-collapse a::after {
+   background: none repeat scroll 0 0 transparent;
+   bottom: 0;
+   content: "";
+   display: block;
+   height: 2px;
+   left: 50%;
+   position: absolute;
+   background: black;
+   transition: width 0.3s ease 0s, left 0.3s ease 0s;
+   width: 0;
+ }
+
+ .navbar .navbar-collapse a:hover::after {
+   width: 100%;
+   left: 0;
+ }
+
+ @media(max-width: 768px) {
+   .navbar {
+     background-color: rgb(255, 255, 255);
    }
- 
-   @media(max-width: 768px){
-      .navbar {background-color:rgb(255,255,255); }
-      .navbar-dark .navbar-toggler {background-color:#c7ccd1;} 
-      .footer-copyright {display: none;}
-  }
-  /*
+
+   .navbar-dark .navbar-toggler {
+     background-color: #c7ccd1;
+   }
+
+   .footer-copyright {
+     display: none;
+   }
+ }
+
+ /*
   .parallax-container h4{
    color: #FFFFFF;
   text-align: center;
@@ -66,269 +82,311 @@
     SECTIONS
   ============================================================ */
  section.module.parallax h4 {
-    color:#FFFFFF;
-    font-size: 60px;
-    line-height: 1;
-     text-align: center;
-     margin-top: -200px;
-    position: absolute;
-    font-family: 'Sacramento', cursive;
-    width:100%;
-    font-weight: 100;
-  }
+   color: #FFFFFF;
+   font-size: 60px;
+   line-height: 1;
+   text-align: center;
+   margin-top: -200px;
+   position: absolute;
+   font-family: 'Sacramento', cursive;
+   width: 100%;
+   font-weight: 100;
+ }
 
-  /* TEXT ABOVE OF PARALLAX 1*/
-/*#text-parallax h1{
+ /* TEXT ABOVE OF PARALLAX 1*/
+ /*#text-parallax h1{
 z-index: 100;
 color: white;
 }*/
-  section.module.parallax-1 {
-    background-image: url("https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
-    background-position:50% 0;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-size: cover;
-     background-blend-mode: screen;
-    clip-path:polygon(100% 0%, 100% 83%, 50% 90%, 50% 90%, 0 83%, 0 0);
-    }
-    .parallax-1 .parallax-container::after{
-        content: "";
-        display: block;
-        width: 100%;
-        height: 100%;
-        background-color: #333;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity:.5;
-        z-index:0 ; 
-    }
-    
-    section.module.parallax-2 {
-    background-image: url("http://www.planwallpaper.com/static/images/Fall-Nature-Background-Pictures.jpg");
-    background-position: 50% 0;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: rgba(0,123,255,0.4);
-    background-blend-mode: screen;
-  }
-  section.module.parallax-3 {
-    background-image: url("http://www.psd-dude.com/tutorials/resources-images/free-rain-and-raindrop-textures-for-photoshop/raindrops-window-background.jpg");
-    background-position: 50% 0;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: rgba(0,123,255,0.4);
-    background-blend-mode: screen;
-  }
-  /*JUSTIFY TEXT CONTAINER TEXT-SECTION */
-     /* MOVING TEXT INSIDE OF CONTAINER*/
-     
- 
+ section.module.parallax-1 {
+   background-image: url("https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+   background-position: 50% 0;
+   background-repeat: repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   background-blend-mode: screen;
+   clip-path: polygon(100% 0%, 100% 83%, 50% 90%, 50% 90%, 0 83%, 0 0);
+ }
+
+ .parallax-1 .parallax-container::after {
+   content: "";
+   display: block;
+   width: 100%;
+   height: 100%;
+   background-color: #333;
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: .5;
+   z-index: 0;
+ }
+
+ section.module.parallax-2 {
+   background-image: url("http://www.planwallpaper.com/static/images/Fall-Nature-Background-Pictures.jpg");
+   background-position: 50% 0;
+   background-repeat: repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   background-color: rgba(0, 123, 255, 0.4);
+   background-blend-mode: screen;
+ }
+
+ section.module.parallax-3 {
+   background-image: url("http://www.psd-dude.com/tutorials/resources-images/free-rain-and-raindrop-textures-for-photoshop/raindrops-window-background.jpg");
+   background-position: 50% 0;
+   background-repeat: repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   background-color: rgba(0, 123, 255, 0.4);
+   background-blend-mode: screen;
+ }
+
+ /*JUSTIFY TEXT CONTAINER TEXT-SECTION */
+ /* MOVING TEXT INSIDE OF CONTAINER*/
 
 
-     @media all and (min-width: 600px) {
-    section.module h2 {
-      font-size: 42px;
-    }
-    section.module p {
-      font-size: 20px;
-    }
-    section.module.parallax {
-      padding: 300px 0;
-    }
-    section.module.parallax h1 {
-      font-size: 96px;
-    }
-  }
-  @media all and (min-width: 960px) {
-    section.module.parallax h1 {
-      font-size: 160px;
-    }
-  }
-  /*footer*/
-  .footer .container-fluid {
-    height: auto;
-  }
-  .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 400px;
-    line-height: 60px;
-  }
-  footer .container-fluid{
-      height:200px;
-  }
-  footer .container-fluid a {
-    display: inline-block;
-    color: #ddd;
-    padding-left: 1em;
-   
-  }
-  footer .container-fluid p {
-    display: inline-block;
-    color: #ddd;
-    padding-left: 1em;
-    padding-right: 2em;
-  }
-  @media(max-width: 768px){
-      .col-md-4 {
-        text-align: center;
-        line-height: 30px;
-    }
-  }
-  .right {
-    text-align: right;
-  }
-  .center {
-    text-align: center;
-  }
-  .left {
-    text-align: left;
-  }
 
-  /*BUTTON
+
+ @media all and (min-width: 600px) {
+   section.module h2 {
+     font-size: 42px;
+   }
+
+   section.module p {
+     font-size: 20px;
+   }
+
+   section.module.parallax {
+     padding: 300px 0;
+   }
+
+   section.module.parallax h1 {
+     font-size: 96px;
+   }
+ }
+
+ @media all and (min-width: 960px) {
+   section.module.parallax h1 {
+     font-size: 160px;
+   }
+ }
+
+ /*footer*/
+ .footer .container-fluid {
+   height: auto;
+ }
+
+ .footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   /* Set the fixed height of the footer here */
+   height: 400px;
+   line-height: 60px;
+ }
+
+ footer .container-fluid {
+   height: 200px;
+ }
+
+ footer .container-fluid a {
+   display: inline-block;
+   color: #ddd;
+   padding-left: 1em;
+
+ }
+
+ footer .container-fluid p {
+   display: inline-block;
+   color: #ddd;
+   padding-left: 1em;
+   padding-right: 2em;
+ }
+
+ @media(max-width: 768px) {
+   .col-md-4 {
+     text-align: center;
+     line-height: 30px;
+   }
+ }
+
+ .right {
+   text-align: right;
+ }
+
+ .center {
+   text-align: center;
+ }
+
+ .left {
+   text-align: left;
+ }
+
+ /*BUTTON
   .btn.blue-gradient{
       padding: 5px 5px;
   }*/
 
-  /* UNDERLINE **************************************/
-  h2 {
-	color: #000;
-	font-size: 26px;
-	font-weight: 300;
-	position: relative;
-	margin: 0 0 50px 0;
-	text-transform: uppercase;
-	display: inline-block;
-}
-h2::after {
-	content: "";
-	width: 50%;
-	position: absolute;
-	height: 4px;
-	border-radius: 1px;
-	background: #ff5555;
-	left: 0;
-	bottom: -20px;
-}
-.carousel {
-	margin: 50px auto;
-}
-.carousel .item {
-	color: #999;
-	overflow: hidden;
-    min-height: 120px;
-	font-size: 13px;
-}
-.carousel .media {
-	position: relative;
-	padding: 0 0 0 20px;
-	margin-left: 20px;
-}
-.carousel .media img {
-	width: 75px;
-	height: 75px;
-	display: block;
-	border-radius: 50%;
-	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    border: 2px solid #fff;
-}
-.carousel .testimonial {
-    color: #fff;
-    position: relative;    
-    background: #9b9b9b;
-	padding: 15px;
-	margin: 0 0 20px 20px;
-}
-.carousel .testimonial::before, .carousel .testimonial::after {
-	content: "";
-	display: inline-block;
-	position: absolute;
-	left: 0;
-	bottom: -20px;
-}
-.carousel .testimonial::before {
-    width: 20px;
-    height: 20px;
-	background: #9b9b9b;
-	box-shadow: inset 12px 0 13px rgba(0,0,0,0.5);
-}
-.carousel .testimonial::after {
-    width: 0;
-    height: 0;
-    border: 10px solid transparent;
-    border-bottom-color: #fff;
-    border-left-color: #fff;
-}
-.carousel .item .row > div:first-child .testimonial {
-	margin: 0 20px 20px 0;
-}
-.carousel .item .row > div:first-child .media {
-	margin-left: 0;
-}
-.carousel .testimonial p {
-	text-indent: 40px;
-    line-height: 21px;
-	margin: 0;
-}
- 
-.carousel .overview {
-	padding: 3px 0 0 15px;
-}
-.carousel .overview .details {
-	padding: 5px 0 8px;
-}
-.carousel .overview b {
-	text-transform: uppercase;
-	color: #ff5555;
-}
-.carousel .carousel-control {
-	width: 30px;
-	height: 30px;
-    background: #666;
-    text-shadow: none;
-	top: 4px;
-}
-.carousel-control i {
-	font-size: 16px;
-}
-.carousel-control.left {
-	left: auto;
-	right: 40px;
-}
-.carousel-control.right {
-	left: auto;
-}
-.carousel-indicators {
-	bottom: -60px;
-}
-.carousel-indicators li, .carousel-indicators li.active {
-	width: 18px;
-    height: 18px;
-	border-radius: 0;
-	margin: 1px 4px;
-}
-.carousel-indicators li {	
-    background: #e2e2e2;
-    border: 4px solid #fff;
-}
-.carousel-indicators li.active {
-	color: #fff;
-    background: #ff5555;    
-    border: 5px double;    
-}
-.star-rating li {
-	padding: 0 2px;
-}
-.star-rating i {
-	font-size: 14px;
-	color: #ffdc12;
-}
+ /* UNDERLINE **************************************/
+ h2 {
+   color: #000;
+   font-size: 26px;
+   font-weight: 300;
+   position: relative;
+   margin: 0 0 50px 0;
+   text-transform: uppercase;
+   display: inline-block;
+ }
 
-   
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Raleway|Sacramento&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato:700|Montserrat:100&display=swap');
+ h2::after {
+   content: "";
+   width: 50%;
+   position: absolute;
+   height: 4px;
+   border-radius: 1px;
+   background: #ff5555;
+   left: 0;
+   bottom: -20px;
+ }
+
+ .carousel {
+   margin: 50px auto;
+ }
+
+ .carousel .item {
+   color: #999;
+   overflow: hidden;
+   min-height: 120px;
+   font-size: 13px;
+ }
+
+ .carousel .media {
+   position: relative;
+   padding: 0 0 0 20px;
+   margin-left: 20px;
+ }
+
+ .carousel .media img {
+   width: 75px;
+   height: 75px;
+   display: block;
+   border-radius: 50%;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   border: 2px solid #fff;
+ }
+
+ .carousel .testimonial {
+   color: #fff;
+   position: relative;
+   background: #9b9b9b;
+   padding: 15px;
+   margin: 0 0 20px 20px;
+ }
+
+ .carousel .testimonial::before,
+ .carousel .testimonial::after {
+   content: "";
+   display: inline-block;
+   position: absolute;
+   left: 0;
+   bottom: -20px;
+ }
+
+ .carousel .testimonial::before {
+   width: 20px;
+   height: 20px;
+   background: #9b9b9b;
+   box-shadow: inset 12px 0 13px rgba(0, 0, 0, 0.5);
+ }
+
+ .carousel .testimonial::after {
+   width: 0;
+   height: 0;
+   border: 10px solid transparent;
+   border-bottom-color: #fff;
+   border-left-color: #fff;
+ }
+
+ .carousel .item .row>div:first-child .testimonial {
+   margin: 0 20px 20px 0;
+ }
+
+ .carousel .item .row>div:first-child .media {
+   margin-left: 0;
+ }
+
+ .carousel .testimonial p {
+   text-indent: 40px;
+   line-height: 21px;
+   margin: 0;
+ }
+
+ .carousel .overview {
+   padding: 3px 0 0 15px;
+ }
+
+ .carousel .overview .details {
+   padding: 5px 0 8px;
+ }
+
+ .carousel .overview b {
+   text-transform: uppercase;
+   color: #ff5555;
+ }
+
+ .carousel .carousel-control {
+   width: 30px;
+   height: 30px;
+   background: #666;
+   text-shadow: none;
+   top: 4px;
+ }
+
+ .carousel-control i {
+   font-size: 16px;
+ }
+
+ .carousel-control.left {
+   left: auto;
+   right: 40px;
+ }
+
+ .carousel-control.right {
+   left: auto;
+ }
+
+ .carousel-indicators {
+   bottom: -60px;
+ }
+
+ .carousel-indicators li,
+ .carousel-indicators li.active {
+   width: 18px;
+   height: 18px;
+   border-radius: 0;
+   margin: 1px 4px;
+ }
+
+ .carousel-indicators li {
+   background: #e2e2e2;
+   border: 4px solid #fff;
+ }
+
+ .carousel-indicators li.active {
+   color: #fff;
+   background: #ff5555;
+   border: 5px double;
+ }
+
+ .star-rating li {
+   padding: 0 2px;
+ }
+
+ .star-rating i {
+   font-size: 14px;
+   color: #ffdc12;
+ }
+
+
+ @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Raleway|Sacramento&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Lato:700|Montserrat:100&display=swap');
