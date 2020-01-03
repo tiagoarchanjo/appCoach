@@ -1,6 +1,10 @@
  @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Raleway|Sacramento&display=swap');
- @import url('https://fonts.googleapis.com/css?family=Abhaya+Libre&display=swap');
- @import url('https://fonts.googleapis.com/css?family=Parisienne|Quicksand:300&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Quicksand:300&display=swap');
+ 
+ 
+ 
+ 
+ 
  body {
    font-family: 'Quicksand', sans-serif;
 
@@ -148,9 +152,9 @@
    text-align: center;
    margin-top: -200px;
    position: absolute;
-   font-family: 'Parisienne', cursive;
+   font-family: 'Herr Von Muellerhoff', cursive;
    width: 100%;
-   font-weight: 100;
+   font-weight: 100; 
  }
 
  .text-background p {
