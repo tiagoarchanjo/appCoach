@@ -1,6 +1,6 @@
  @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Raleway|Sacramento&display=swap');
  @import url('https://fonts.googleapis.com/css?family=Abhaya+Libre&display=swap');
-
+ @import url('https://fonts.googleapis.com/css?family=Parisienne|Quicksand:300&display=swap');
  body {
    font-family: 'Quicksand', sans-serif;
 
@@ -32,11 +32,17 @@
  }
 
  .navbar-brand img {
-   margin-left: 140px;
+   margin-left: 150px;
  }
  .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
   color: rgb(0, 0, 0,0.8);
- font-weight: 100;
+ font-weight:400;
+ font-size:17px;
+}
+.navbar .navbar-collapse a{
+  margin: 0 20px;
+  text-transform: uppercase;
+   
 }
   .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
     color:rgb(180, 178, 178);
@@ -44,24 +50,14 @@
 
  .navbar .navbar-collapse {
    margin-right: 150px;
- 
+}
 
- }
-
- .navbar .navbar-collapse a{
-   margin: 0 20px;
-   text-transform: uppercase;
-    
- }
-
-
-
- .navbar .navbar-collapse a::after {
+.navbar .navbar-collapse a::after {
    background: none repeat scroll 0 0 transparent;
    bottom: 0;
    content: "";
    display: block;
-   height: 2px;
+   height:1px;
    left: 50%;
    position: absolute;
    background: black;
@@ -75,24 +71,18 @@
  }
 
 
-
  @media(max-width: 768px) {
    .navbar {
-     background-color: rgb(255, 255, 255);
-   }
+     background-color: rgb(255, 255, 255);}
+    
+
+    .navbar-brand img {
+    margin: 0 auto;}
 
    .navbar-dark .navbar-toggler {
      background-color: #c7ccd1;
-   }
-
-   .text-uppercase.text-center {
-     display: block;
-
-   }
-
-
- }
-
+   } 
+  }
  /*
   .parallax-container h4{
    color: #FFFFFF;
@@ -101,16 +91,8 @@
     font-size: 50px;
     position: absolute;
     margin-top: -200px;
-  }*/
-
-
-
- /* ============================================================
-    PRIMARY STRUCTURE
-  ============================================================ */
-
-
-
+  */
+ 
  /* ============================================================
     SECTIONS
   ============================================================ */
@@ -124,9 +106,6 @@
    font-family: "Roboto Slab", serif;
    font-size: 30px;
  }
-
-
-
 
  section.module h2 {
    margin-bottom: 40px;
@@ -158,19 +137,18 @@
    background-position: 0 0;
    text-align: center;
    position: relative;
-
- }
+}
 
  /*TEXT PARALLAX CUSTOMISER*/
 
  section.module.parallax h4 {
    color: #FFFFFF;
-   font-size: 65px;
+   font-size: 55px;
    line-height: 1;
    text-align: center;
    margin-top: -200px;
    position: absolute;
-   font-family: 'Sacramento', cursive;
+   font-family: 'Parisienne', cursive;
    width: 100%;
    font-weight: 100;
  }
@@ -182,7 +160,6 @@
    position: relative;
    line-height: 1.8;
  }
-
 
 
  /* TEXT ABOVE OF PARALLAX 1*/
@@ -258,44 +235,29 @@ color: white;
    }
  }
 
- @media all and (min-width: 960px) {
-   section.module.parallax h1 {
-     font-size: 160px;
-   }
- }
+ /* ============================================================
+    FOOTER
+  ============================================================ */
 
- /*footer*/
- .footer .container-fluid {
+  .footer .container-fluid {
    height: auto;
  }
-
  .footer {
    position: absolute;
    bottom: 0;
    width: 100%;
    /* Set the fixed height of the footer here */
-   height: 400px;
    line-height: 60px;
  }
-
- footer .container-fluid {
-   height: 200px;
- }
-
  footer .container-fluid a {
    display: inline-block;
    color: #ddd;
-   padding-left: 1em;
-
- }
-
+  }
  footer .container-fluid p {
    display: inline-block;
    color: #ddd;
-   padding-left: 1em;
-   padding-right: 2em;
+    padding-right:1em;
  }
-
  .page-footer {
    position: relative;
    bottom: 0;
@@ -308,23 +270,20 @@ color: white;
      line-height: 30px;
    }
  }
-
  .right {
    text-align: right;
  }
-
  .center {
    text-align: center;
  }
-
  .left {
    text-align: left;
  }
 
- /*BUTTON*/
+ /*BUTTON
  .btn.blue-gradient {
    padding: 5px 5px;
- }
+ }*/
 
  /* TESTEMONIAL **************************************/
  h2 {
