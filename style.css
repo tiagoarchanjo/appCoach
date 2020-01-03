@@ -1,37 +1,59 @@
+ @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Raleway|Sacramento&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Abhaya+Libre&display=swap');
+
+ body {
+   font-family: 'Quicksand', sans-serif;
+
+ }
+
+ html {
+   position: relative;
+   min-height: 100%;
+ }
+
  * {
    margin: 0;
    padding: 0;
  }
 
- .affix {
-   top: 0;
-   width: 100%;
-   z-index: 9999 !important;
+ .jumbotron {
+   background-image: url("https://www.smak.co.za/images/bg.jpg");
+   background-size: 100% 100%;
+   color: #b0bec5;
+   margin-bottom: 0;
  }
 
-
- /*
-  .jumbotron {
-    background-image: url("https://www.smak.co.za/images/bg.jpg");
-    background-size: 100% 100%;
-    color: #b0bec5;
-    margin-bottom: 0;
-  }*/
  .navbar-scroll {
+
    background-color: rgb(255, 255, 255, 0.8);
    transition: background-color 0.5s;
    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
    border-top: 1px solid rgba(0, 0, 0, 0.13);
  }
 
- #nav {
+ .navbar-brand img {
    margin-left: 140px;
-
  }
+ .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+  color: rgb(0, 0, 0,0.8);
+ font-weight: 100;
+}
+  .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+    color:rgb(180, 178, 178);
+  }
 
- .navbar .navbar-collapse #nav {
+ .navbar .navbar-collapse {
    margin-right: 150px;
+ 
+
  }
+
+ .navbar .navbar-collapse a{
+   margin: 0 20px;
+   text-transform: uppercase;
+    
+ }
+
 
 
  .navbar .navbar-collapse a::after {
@@ -52,6 +74,8 @@
    left: 0;
  }
 
+
+
  @media(max-width: 768px) {
    .navbar {
      background-color: rgb(255, 255, 255);
@@ -61,9 +85,12 @@
      background-color: #c7ccd1;
    }
 
-   .footer-copyright {
-     display: none;
+   .text-uppercase.text-center {
+     display: block;
+
    }
+
+
  }
 
  /*
@@ -75,15 +102,70 @@
     position: absolute;
     margin-top: -200px;
   }*/
+
+
+
  /* ============================================================
     PRIMARY STRUCTURE
   ============================================================ */
+
+
+
  /* ============================================================
     SECTIONS
   ============================================================ */
+
+ section.module:last-child {
+   margin-bottom: 0;
+ }
+
+ section.module h1 {
+   margin-bottom: 40px;
+   font-family: "Roboto Slab", serif;
+   font-size: 30px;
+ }
+
+
+
+
+ section.module h2 {
+   margin-bottom: 40px;
+   font-family: "Roboto Slab", serif;
+   font-size: 30px;
+ }
+
+ section.module p {
+   margin-bottom: 40px;
+   font-size: 16px;
+   font-weight: 300;
+ }
+
+ section.module p:last-child {
+   margin-bottom: 0;
+ }
+
+ section.module.content {
+   background-color: #FFFFFF;
+   text-align: center;
+   margin-bottom: 20px;
+ }
+
+ section.module.content:last-child {
+   margin-bottom: 50px;
+ }
+
+ section.module.parallax {
+   background-position: 0 0;
+   text-align: center;
+   position: relative;
+
+ }
+
+ /*TEXT PARALLAX CUSTOMISER*/
+
  section.module.parallax h4 {
    color: #FFFFFF;
-   font-size: 60px;
+   font-size: 65px;
    line-height: 1;
    text-align: center;
    margin-top: -200px;
@@ -92,6 +174,16 @@
    width: 100%;
    font-weight: 100;
  }
+
+ .text-background p {
+   text-align: center;
+   color: #FFFFFF;
+   font-size: 50px;
+   position: relative;
+   line-height: 1.8;
+ }
+
+
 
  /* TEXT ABOVE OF PARALLAX 1*/
  /*#text-parallax h1{
@@ -121,6 +213,13 @@ color: white;
    z-index: 0;
  }
 
+ /* MOVING TEXT INSIDE OF CONTAINER Z-INDEX*/
+
+ .parallax-1 .parallax-container>* {
+   z-index: 10;
+   position: relative;
+ }
+
  section.module.parallax-2 {
    background-image: url("http://www.planwallpaper.com/static/images/Fall-Nature-Background-Pictures.jpg");
    background-position: 50% 0;
@@ -140,12 +239,6 @@ color: white;
    background-color: rgba(0, 123, 255, 0.4);
    background-blend-mode: screen;
  }
-
- /*JUSTIFY TEXT CONTAINER TEXT-SECTION */
- /* MOVING TEXT INSIDE OF CONTAINER*/
-
-
-
 
  @media all and (min-width: 600px) {
    section.module h2 {
@@ -203,6 +296,12 @@ color: white;
    padding-right: 2em;
  }
 
+ .page-footer {
+   position: relative;
+   bottom: 0;
+   width: 100%;
+ }
+
  @media(max-width: 768px) {
    .col-md-4 {
      text-align: center;
@@ -222,12 +321,12 @@ color: white;
    text-align: left;
  }
 
- /*BUTTON
-  .btn.blue-gradient{
-      padding: 5px 5px;
-  }*/
+ /*BUTTON*/
+ .btn.blue-gradient {
+   padding: 5px 5px;
+ }
 
- /* UNDERLINE **************************************/
+ /* TESTEMONIAL **************************************/
  h2 {
    color: #000;
    font-size: 26px;
@@ -386,7 +485,3 @@ color: white;
    font-size: 14px;
    color: #ffdc12;
  }
-
-
- @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Raleway|Sacramento&display=swap');
- @import url('https://fonts.googleapis.com/css?family=Lato:700|Montserrat:100&display=swap');
