@@ -19,28 +19,32 @@
 
 </head>
 
-<body>
-	<header>
-		<nav class="navbar navbar-expand-md navbar-dark bg-fade fixed-top">
-			<a class="navbar-brand" href="#"> <img src="./img/logo1.svg" height="50px" alt="" class="src"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-				aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
+	<header>
+		<nav id="nav" class="navbar navbar-expand-md navbar-dark bg-fade fixed-top navbar-inverse" data-spy="affix" data-offset-top="197">
+			<a class="navbar-brand" href="#"> <img src="./img/logo1.svg" height="50px" alt="" class="src"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+				
+			</button>
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="#">Coaching<span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#section1">Coaching<span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Benef&iacute;cios</a>
+						<a class="nav-link" href="#section2">Benef&iacute;cios</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Depoimentos</a>
+						<a class="nav-link" href="#section3">Quem j&aacute; aprovou?</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contatos</a>
+						<a class="nav-link" href="#section4">Depoimentos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#section5">Contatos</a>
 					</li>
 
 					<!--
@@ -70,23 +74,25 @@
 		</div>
 
 
-	<div class="container">
-	<div class="text-background">
-	<p><span style="font-size: 40px; text-transform: uppercase; letter-spacing: 2px;
+		<div class="container">
+			<div class="text-background">
+				<p><span style="font-size: 40px; text-transform: uppercase; letter-spacing: 2px;
 	font-family: Roboto Slab, serif;"> lorem nec tortor ipsum dolor </span><br>
-	<span style="font-size:20px;font-weight: bold;">Morbi ac metus ac lacus gravida malesuada id a felis </span><br>
-	<span style="font-size:20px;">tincidunt laoreet. Donec at orci ultrices</span></p>
-	</div>
-	</div>
+					<span style="font-size:20px;font-weight: bold;">Morbi ac metus ac lacus gravida malesuada id a felis
+					</span><br>
+					<span style="font-size:20px;">tincidunt laoreet. Donec at orci ultrices</span></p>
+			</div>
+		</div>
 	</section>
 
 
-	<section class="text-center">
+	<div id="section1" class="container">
 		<p style="text-align: center; line-height:1.8;"><span
 				style="font-size: 28px;font-family: Roboto Slab, serif;">Nullam iaculis </span></p>
 
 		<p style="text-align: center; line-height:1.4;"><span
-				style="font-size: 32px;font-family: 'Lato', sans-serif;font-weight: bold;">Vestibulum elementum ornare augue
+				style="font-size: 32px;font-family: 'Lato', sans-serif;font-weight: bold;">Vestibulum elementum ornare
+				augue
 				&amp;Vestibulum et neque <br>
 				Curabitur et tempor nibh, ac fringilla lorem <br>
 				you content PLR that gets you seen online.</span></p>
@@ -96,12 +102,12 @@
 		<p style="text-align: center;"><span style="font-size: 22px;color:#474747;">
 				Now is the perfect time that your coaching business became visible with <br>
 				<span style="font-weight: bold;"><em>conversion based content&amp;design</em></span> that captures your
-				essence, elevates your<br> Cras tempus erat vel lacus cursus convallis. Donec vitae efficitur ipsum </span></p>
-				<br><br>
-		 
-	</section>
+				essence, elevates your<br> Cras tempus erat vel lacus cursus convallis. Donec vitae efficitur ipsum
+			</span></p>
+		<br><br>
+	</div>
 
-	<section class="module parallax parallax-2" data-type="background" data-speed="10">
+	<section id="section2" class="module parallax parallax-2" data-type="background" data-speed="10">
 		<div class="parallax-container">
 			<h1>Shape</h1>
 		</div>
@@ -114,7 +120,7 @@
 		</div>
 	</section>
 
-	<section class="module parallax parallax-3" data-type="background" data-speed="10">
+	<section id="section3" class="module parallax parallax-3" data-type="background" data-speed="10">
 		<div class="parallax-container">
 			<h1>Color</h1>
 		</div>
@@ -127,7 +133,7 @@
 		</div>
 	</section>
 
-	<div class="container">
+	<div id="section4" class="container">
 		<div class="row">
 			<div class="col-sm-12">
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -329,7 +335,7 @@
 
 
 	<!-- Footer -->
-	<footer class="page-footer font-small unique-color-dark pt-4">
+	<footer id="section5" class="page-footer font-small unique-color-dark pt-4">
 
 		<!-- Footer Links -->
 		<div class="container-fluid text-center text-md-left">
@@ -341,8 +347,8 @@
 				<div class="col-md-6 mt-md-0 mt-3">
 
 					<!-- Content -->
-					<h5 class="text-uppercase">Footer Content</h5>
-					<p>Here you can use rows and columns to organize your footer content.</p>
+					<h5 class="text-uppercase">diam semper</h5>
+					<p> Vestibulum et neque at diam semper ullamcorper </p>
 
 				</div>
 				<!-- Grid column -->
@@ -404,8 +410,8 @@
 		<!-- Footer Links -->
 
 		<!-- Copyright -->
-		<div class="footer-copyright text-center py-3">© 2018 Copyright:
-			<a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+		<div class="footer-copyright text-center py-3">© 2020 Copyright:
+			<a href="https://mdbootstrap.com/education/bootstrap/">Mauricio Moura</a>
 		</div>
 		<!-- Copyright -->
 
@@ -424,6 +430,29 @@
 	<script type="text/javascript"></script>
 
 
+
+<!--SCROLLSPY & AFFIX WITH SMOOTH SCROLL-->
+<script>
+$("#nav ul li a[href^='#']").on('click', function(e) {
+
+// prevent default anchor click behavior
+e.preventDefault();
+
+// store hash
+var hash = this.hash;
+
+// animate
+$('html, body').animate({
+	scrollTop: $(hash).offset().top
+  }, 1000, function(){
+
+	// when done, add hash to url
+	// (default click behaviour)
+	window.location.hash = hash;
+  });
+
+});
+</script>
 
 	<script>
 		//parallax js
