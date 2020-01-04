@@ -49,7 +49,7 @@ body {
   text-transform: uppercase;
 }
 .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
-  color: rgb(180, 178, 178);
+  color: rgb(158, 156, 156,0.8);
 }
 .navbar .navbar-collapse {
   margin-right: 130px;
@@ -266,6 +266,8 @@ footer .container-fluid p {
   .col-md-4 {
     text-align: center;
     line-height: 30px;
+    
+
   }
 }
 .right {
