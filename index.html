@@ -16,18 +16,18 @@
 	<link rel="stylesheet" href="css/mdb.min.css">
 	<!-- Your custom styles (optional) -->
 	<link rel="stylesheet" href="style.css">
-
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-
 	<header>
-		<nav id="nav" class="navbar navbar-expand-md navbar-dark bg-fade fixed-top navbar-inverse" data-spy="affix" data-offset-top="197">
+		<nav id="nav" class="navbar navbar-expand-md navbar-dark bg-fade fixed-top navbar-inverse" data-spy="affix"
+			data-offset-top="197">
 			<a class="navbar-brand" href="#"> <img src="./img/logo1.svg" height="50px" alt="" class="src"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+				aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
 			</button>
-				
+
 			</button>
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 				<ul class="navbar-nav ml-auto">
@@ -66,14 +66,10 @@
 		</nav>
 	</header>
 
-
 	<section class="module parallax parallax-1" id="text-parallax" data-type="background" data-speed="10">
 		<div class="parallax-container">
 			<h4>Mauricio Moura</h4>
-
 		</div>
-
-
 		<div class="container">
 			<div class="text-background">
 				<p><span style="font-size: 40px; text-transform: uppercase; letter-spacing: 2px;
@@ -84,7 +80,6 @@
 			</div>
 		</div>
 	</section>
-
 
 	<div id="section1" class="container">
 		<p style="text-align: center; line-height:1.8;"><span
@@ -114,7 +109,7 @@
 	</section>
 
 	<section class="module content">
-		<div class="parallax-container">
+		<div class="text-background">
 			<h2>Lorem Ipsum Dolor</h2>
 			<p>Lorem ipsum dolor...</p>
 		</div>
@@ -431,28 +426,7 @@
 
 
 
-<!--SCROLLSPY & AFFIX WITH SMOOTH SCROLL-->
-<script>
-$("#nav ul li a[href^='#']").on('click', function(e) {
 
-// prevent default anchor click behavior
-e.preventDefault();
-
-// store hash
-var hash = this.hash;
-
-// animate
-$('html, body').animate({
-	scrollTop: $(hash).offset().top
-  }, 1000, function(){
-
-	// when done, add hash to url
-	// (default click behaviour)
-	window.location.hash = hash;
-  });
-
-});
-</script>
 
 	<script>
 		//parallax js
@@ -493,7 +467,28 @@ $('html, body').animate({
 		})
 	</script>
 
+	<!--SCROLLSPY & AFFIX WITH SMOOTH SCROLL-->
+	<script>
+		$("#nav ul li a[href^='#']").on('click', function (e) {
 
+			// prevent default anchor click behavior
+			e.preventDefault();
+
+			// store hash
+			var hash = this.hash;
+
+			// animate
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 1000, function () {
+
+				// when done, add hash to url
+				// (default click behaviour)
+				window.location.hash = hash;
+			});
+
+		});
+	</script>
 </body>
 
 </html>
