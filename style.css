@@ -81,6 +81,12 @@ body {
   .navbar-dark .navbar-toggler {
     background-color: #c7ccd1;
   }
+
+div.text-background p{
+font-size: 5px;
+}
+
+
 }
 /*
   .parallax-container h4{
@@ -263,11 +269,10 @@ footer .container-fluid p {
 }
 
 @media (max-width: 768px) {
-  .col-md-4 {
-    text-align: center;
-    line-height: 30px;
+ 
     
-
+    section.module.parallax h4 {
+font-size:30px;
   }
 }
 .right {
@@ -283,7 +288,7 @@ footer .container-fluid p {
 /*BUTTON
  .btn.blue-gradient {
    padding: 5px 5px;
- }*/
+ */
 
 /* TESTEMONIAL **************************************/
 h2 {
