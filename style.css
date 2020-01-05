@@ -1,6 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Great+Vibes|Raleway|Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Quicksand:300&display=swap");
 
+body {
+  font-family: "Quicksand", sans-serif;
+  height: 100%
+}
+
+html {
+  height: 100%;
+  position: relative;
+  min-height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 .affix {
   top: 0;
@@ -13,22 +28,13 @@
   top: 50px;
 }
 
-body {
-  font-family: "Quicksand", sans-serif;
-}
-
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
+/*
 .jumbotron {
   background-image: url("https://www.smak.co.za/images/bg.jpg");
   background-size: 100% 100%;
   color: #b0bec5;
   margin-bottom: 0;
-}
+}*/
 
 .navbar-scroll {
   background-color: rgb(255, 255, 255, 0.8);
@@ -42,17 +48,17 @@ body {
 }
 
 .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
-  color: rgb(0, 0, 0, 0.8);
+  color: rgb(0, 0, 0);
   font-size: 17px;
-}
-
-.navbar .navbar-collapse a {
   margin: 0 5px;
   text-transform: uppercase;
+  font-weight: 400;
+
 }
 
 .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
-  color: rgb(224, 222, 222);
+  color: rgba(75, 74, 74, 0.8);
+
 }
 
 .navbar .navbar-collapse {
@@ -77,21 +83,6 @@ body {
   left: 0;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    background-color: rgb(255, 255, 255);
-  }
-
-  .navbar-brand img {
-    margin: 0 auto;
-  }
-
-  .navbar-dark .navbar-toggler {
-    background-color: #c7ccd1;
-  }
-
-}
-
 /*
   .parallax-container h4{
    color: #FFFFFF;
@@ -105,45 +96,36 @@ body {
 /* ============================================================
     SECTIONS
   ============================================================ */
-
-section.module:last-child {
-  margin-bottom: 0;
-}
-
-section.module h1 {
-  margin-bottom: 40px;
-  font-family: "Roboto Slab", serif;
-  font-size: 30px;
-}
-
 section.module h2 {
   margin-bottom: 40px;
   font-family: "Roboto Slab", serif;
   font-size: 30px;
 }
 
+/*
 section.module p {
   margin-bottom: 40px;
   font-size: 16px;
   font-weight: 300;
-}
-
+}*/
+/*
 section.module p:last-child {
   margin-bottom: 0;
-}
+}*/
 
 section.module.content {
   background-color: #ffffff;
   text-align: center;
   margin-bottom: 20px;
+  margin: 40px;
 }
 
+/*
 section.module.content:last-child {
   margin-bottom: 50px;
-}
+}*/
 
 section.module.parallax {
-  background-position: 0 0;
   text-align: center;
   position: relative;
 }
@@ -156,25 +138,26 @@ section.module.parallax h4 {
   line-height: 1;
   text-align: center;
   margin-top: -200px;
+  margin-left: 510px;
   position: absolute;
   font-family: "Herr Von Muellerhoff", cursive;
-  width: 100%;
+  width: 0 auto;
   font-weight: 100;
 }
 
-.text-background p {
-  text-align: center;
-  color: #ffffff;
-  font-size: 50px;
-  position: relative;
-  line-height: 1.8;
+/* TEXT ABOVE OF PARALLAX 1*/
+section.module.parallax p {
+  z-index: 100;
+  color: white;
+  line-height: .9;
 }
 
-/* TEXT ABOVE OF PARALLAX 1*/
-/*#text-parallax h1{
-z-index: 100;
-color: white;
+/*
+.parallax-container {
+  max-width: 960px;
+  margin: 0 auto;
 }*/
+
 section.module.parallax-1 {
   background-image: url("https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
   background-position: 50% 0;
@@ -199,48 +182,36 @@ section.module.parallax-1 {
 }
 
 /* MOVING TEXT INSIDE OF CONTAINER Z-INDEX*/
-
 .parallax-1 .parallax-container>* {
   z-index: 10;
   position: relative;
 }
 
 section.module.parallax-2 {
-  background-image: url("https://images.unsplash.com/photo-1479981280584-037818c1297d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60");
+  background-image: url("https://images.unsplash.com/photo-1483959651481-dc75b89291f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60");
   background-position: 50% 0;
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: rgba(0, 123, 255, 0.4);
   background-blend-mode: screen;
+}
+
+.parallax-2,
+.parallax-3 h1 {
+  color: #ffffff;
 }
 
 section.module.parallax-3 {
-  background-image: url("https://images.unsplash.com/photo-1479981280584-037818c1297d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60");
+  background-image: url("https://images.unsplash.com/photo-1484842641800-6767207f4220?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60");
   background-position: 50% 0;
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: rgba(0, 123, 255, 0.4);
   background-blend-mode: screen;
-}
+  height: 100%;
 
-@media all and (min-width: 600px) {
-  section.module h2 {
-    font-size: 42px;
-  }
-
-  section.module p {
-    font-size: 20px;
-  }
-
-  section.module.parallax {
-    padding: 300px 0;
-  }
-
-  section.module.parallax h1 {
-    font-size: 96px;
-  }
 }
 
 /* ============================================================
@@ -274,13 +245,6 @@ footer .container-fluid p {
   position: relative;
   bottom: 0;
   width: 100%;
-}
-
-@media (max-width: 768px) {
-  .col-md-4 {
-    text-align: center;
-    line-height: 30px;
-  }
 }
 
 .right {
@@ -458,4 +422,61 @@ h2::after {
 .star-rating i {
   font-size: 14px;
   color: #ffdc12;
+}
+
+
+@media (max-width: 768px) {
+
+  .navbar-brand img {
+    margin: 0 auto;
+  }
+
+  .navbar-dark .navbar-toggler {
+    background-color: #adb0b3;
+  }
+
+  section.module.parallax {
+    padding: 300px 0;
+    margin: 0 auto;
+  }
+
+  section.module.parallax h4 {
+    text-align: center;
+    font-size: 45px;
+    margin-left: 115px;
+    width: auto;
+  }
+
+  .col-md-4 {
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .navbar .navbar-collapse a::after {
+    display: none;
+  }
+
+  .navbar-collapse li {
+    border-bottom: 1px solid black;
+  }
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+
+  section.module p {
+    font-size: 20px;
+  }
+
+  section.module.parallax {
+    padding: 300px 0;
+  }
+
+  /*
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+*/
 }
