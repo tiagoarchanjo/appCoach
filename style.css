@@ -7,7 +7,6 @@ body {
 }
 
 html {
-  height: 100%;
   position: relative;
   min-height: 100%;
 }
@@ -128,6 +127,8 @@ section.module.content:last-child {
 section.module.parallax {
   text-align: center;
   position: relative;
+  padding: 300px 0;
+
 }
 
 /*TEXT PARALLAX CUSTOMISER*/
@@ -188,7 +189,7 @@ section.module.parallax-1 {
 }
 
 section.module.parallax-2 {
-  background-image: url("https://images.unsplash.com/photo-1483959651481-dc75b89291f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60");
+  background-image: url("https://img.favpng.com/15/10/23/color-display-resolution-wallpaper-png-favpng-61D1WY9Kt9yE0cnk8Ckrqp5GC.jpg");
   background-position: 50% 0;
   background-repeat: repeat;
   background-attachment: fixed;
@@ -203,7 +204,7 @@ section.module.parallax-2 {
 }
 
 section.module.parallax-3 {
-  background-image: url("https://images.unsplash.com/photo-1484842641800-6767207f4220?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60");
+  background-image: url("https://i.pinimg.com/736x/6a/44/27/6a44277bd07a4f00c7b11046538a7435.jpg");
   background-position: 50% 0;
   background-repeat: repeat;
   background-attachment: fixed;
@@ -474,9 +475,8 @@ h2::after {
     padding: 300px 0;
   }
 
-  /*
   section.module.parallax h1 {
     font-size: 96px;
   }
-*/
+
 }
