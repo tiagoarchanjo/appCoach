@@ -27,9 +27,9 @@ html {
   top: 50px;
 }
 
-/*SOCIAL ICONS */
+/*SOCIAL ICONS*/
 .wrapper {
-  margin-top: 150px;
+  margin-top:300px;
   margin-left: -15px;
   display: -webkit-flex;
   display: flex;
@@ -529,11 +529,11 @@ h2::after {
     display: none;
   }
 
-  .navbar-collapse li {
+  .navbar-collapse li a{
     border-bottom: 1px solid black;
   }
   .wrapper {
-    margin-top: 300px;
+    margin-top:300px;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-wrap: wrap;
