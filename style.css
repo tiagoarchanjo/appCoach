@@ -1,23 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Great+Vibes|Raleway|Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Quicksand:300&display=swap");
-
-body {
-  font-family: "Quicksand", sans-serif;
-   background-color: rgb(248, 250, 251);
-  }
-
-html {
-  position: relative;
-  min-height: 100%;
-  --maxWidth: 1284px;
-
-}
-
 * {
   margin: 0;
   padding: 0;
  }
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding:0;
+   }
 
+html {
+  position: relative;
+  min-height: 100%;
+ 
+}
+
+
+ 
 .affix {
   top: 0;
   width: 100%;
@@ -202,10 +202,13 @@ section.module.content {
   display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 0;
     width: 100%;
     box-sizing: border-box;
-}
+    background-image: radial-gradient(rgb(153, 152, 152,0.8) 5%, transparent 0);
+    background-size: 30px 30px;
+    border-top-right-radius: 25px;
+ }
 .lbl-home {
   color: #1F4F66;
   font-size: 20px;
@@ -222,7 +225,7 @@ width: 100%;
 text-align: center;}
 
 .box-um-tecnologia{
-  margin-top: 90px;
+  margin-top: 15px;
   width: 1000px;
   display: flex;
   flex-wrap: wrap-reverse;
@@ -230,13 +233,14 @@ text-align: center;}
   justify-content: center;
   z-index: 2;
   
-  }
-  /*
+
+    }
+  
+    /*
   .box-tecnologia{
     background-image: linear-gradient(to right, #464247 0, #bebcbb 100%);
     color: #ddd;
   }*/
-
 
   .box-dois-tecnologia {
     display: flex;
@@ -266,7 +270,7 @@ text-align: center;}
   align-items: center;
   width: calc(50% - 40px);
   min-height: 140px;
-  margin: 0 20px 50px 0;
+   margin: 0 20px 50px 0;
   background-color: #fff;
   padding: 30px;
   border-radius: 12px;
@@ -317,7 +321,7 @@ section.module.parallax {
 /*TEXT PARALLAX CUSTOMISER*/
 
 section.module.parallax h4 {
-  color: #ffffff;
+  color:#fff;
   font-size: 55px;
   line-height: 1;
   text-align: center;
@@ -642,10 +646,9 @@ h2::after {
 
   .wrapper {
     display: none;
-  }
+  }}
 
-  }
-
+  
 @media all and (min-width: 600px) {
   section.module h2 {
     font-size: 42px;
