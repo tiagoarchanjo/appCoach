@@ -3,18 +3,20 @@
 
 body {
   font-family: "Quicksand", sans-serif;
-  height: 100%;
-}
+   background-color: rgb(248, 250, 251);
+  }
 
 html {
   position: relative;
   min-height: 100%;
+  --maxWidth: 1284px;
+
 }
 
 * {
   margin: 0;
   padding: 0;
-}
+ }
 
 .affix {
   top: 0;
@@ -76,7 +78,7 @@ i {
 }
 
 .wrapper i:nth-child(3) {
-  color: #813db4;
+  color: #d6249f;
   cursor: pointer;
   text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   transition: all ease-in-out 150ms;
@@ -85,7 +87,7 @@ i {
 .wrapper i:nth-child(3):hover {
   text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
   transform: translate(0, -5);
-}
+}/*
 .wrapper i:nth-child(4) {
   color: #d6249f;
   color: radial-gradient(
@@ -104,7 +106,7 @@ i {
   text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
   transform: translate(0, -8);
 }
-
+*/
 /*
 .jumbotron {
   background-image: url("https://www.smak.co.za/images/bg.jpg");
@@ -194,6 +196,112 @@ section.module.content {
   margin-bottom: 20px;
   margin: 40px;
 }
+/*BOX TEXT*/
+
+.carreira-home {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.lbl-home {
+  color: #1F4F66;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  width: 100%;
+  text-align: center;}
+
+.titulo-home {
+color: #0AC5D4;
+font-size: 30px;
+margin: 0;
+width: 100%;
+text-align: center;}
+
+.box-um-tecnologia{
+  margin-top: 90px;
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  
+  }
+  /*
+  .box-tecnologia{
+    background-image: linear-gradient(to right, #464247 0, #bebcbb 100%);
+    color: #ddd;
+  }*/
+
+
+  .box-dois-tecnologia {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 96, 0.73)), url("https://cdn.hipwallpaper.com/i/54/9/vgj2Qk.jpg");
+    background-position: 50% 50%;
+    width: 100%;
+    padding-top: 100px;
+    margin-top: -101px;
+    border-radius: 0 0 78px 78px;
+     /*background-attachment: fixed;*/}
+    
+  .box-limite-tecnologia {
+     width: 1000px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+
+}
+
+  .box-tecnologia {
+  display: flex;
+  align-items: center;
+  width: calc(50% - 40px);
+  min-height: 140px;
+  margin: 0 20px 50px 0;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 12px 15px 20px rgba(82, 73, 73, 0.2);}
+
+  .box-tecnologia:nth-child(2n) {
+    margin: 0 0 50px 20px;
+}
+  .icone-tecnologia {
+    margin-right: 30px;}
+
+  .content-site-devmedia * {
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+  
+  * {
+  -webkit-tap-highlight-color: transparent;}
+
+  .box-numeros-tecnologia {
+  margin-top: 60px;
+  display: flex;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  width: 1000px;
+  justify-content: space-around;
+  padding-bottom: 100px;
+}
+.box-numeros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;}
 
 /*
 section.module.content:last-child {
@@ -213,12 +321,12 @@ section.module.parallax h4 {
   font-size: 55px;
   line-height: 1;
   text-align: center;
-  margin-top: -200px;
-  margin-left: 510px;
   position: absolute;
   font-family: "Herr Von Muellerhoff", cursive;
-  width: 0 auto;
+  width: 50%;
+  margin-left: 25%;
   font-weight: 100;
+  margin-top: -150px;
 }
 
 /* TEXT ABOVE OF PARALLAX 1*/
@@ -349,7 +457,7 @@ h2 {
   text-transform: uppercase;
   display: inline-block;
 }
-
+/*
 h2::after {
   content: "";
   width: 50%;
@@ -359,7 +467,7 @@ h2::after {
   background: #ff5555;
   left: 0;
   bottom: -20px;
-}
+}*/
 
 .carousel {
   margin: 50px auto;
@@ -509,16 +617,19 @@ h2::after {
   }
 
   section.module.parallax {
-    padding: 300px 0;
+    padding: 150px 0;
     margin: 0 auto;
+    height:100%;
+
   }
 
   section.module.parallax h4 {
-    text-align: center;
-    font-size: 45px;
-    margin-left: 115px;
-    width: auto;
-  }
+     font-size: 45px;
+     width: 50%;
+    margin-left:25%;
+    position: absolute;
+    margin-top: -40px;
+}
 
   .col-md-4 {
     text-align: center;
@@ -529,31 +640,11 @@ h2::after {
     display: none;
   }
 
-  .navbar-collapse li a{
-    border-bottom: 1px solid black;
-  }
   .wrapper {
-    margin-top:300px;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-align-content: center;
-    align-content: center;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 50px;
-    z-index: 1024;
-    position: fixed;
+    display: none;
   }
 
-  i {
-    padding: 05px 0px 5px 0px;
   }
-}
 
 @media all and (min-width: 600px) {
   section.module h2 {
@@ -563,10 +654,10 @@ h2::after {
   section.module p {
     font-size: 20px;
   }
-
+/*
   section.module.parallax {
     padding: 300px 0;
-  }
+  }*/
 
   section.module.parallax h1 {
     font-size: 96px;
