@@ -341,7 +341,7 @@ section.module.parallax p {
   margin: 0 auto;
 }*/
 #text-parallax{
-  border-radius: 0 0 78px 78px;
+  border-radius: 0 0 78px 0;
   -webkit-background-clip: padding-box; 
   -moz-background-clip:padding; 
   background-clip: padding-box;
@@ -367,7 +367,7 @@ section.module.parallax-1 {
   left: 0;
   opacity: 0.5;
   z-index: 0;
-  border-radius: 0 0 78px 78px;
+  border-radius: 0 0 78px 0;
 }
 
 /* MOVING TEXT INSIDE OF CONTAINER Z-INDEX*/
@@ -384,8 +384,7 @@ section.module.parallax-2 {
   background-size: cover;
   background-color: rgba(0, 123, 255, 0.4);
   background-blend-mode: screen;
-height: 100%;
-width: 100%;
+
 }
 
 .parallax-2,
