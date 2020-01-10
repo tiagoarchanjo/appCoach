@@ -121,9 +121,8 @@ i {
 
 .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
   color: rgb(0, 0, 0);
-  font-size: 17px;
+  font-size: 20px;
   margin: 0 5px;
-  text-transform: uppercase;
   font-weight: 400;
 }
 
@@ -617,6 +616,7 @@ h2::after {
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    z-index: 2000;
 }
 #return-to-top i {
     color: #fff;
