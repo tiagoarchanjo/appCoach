@@ -8,6 +8,7 @@
 	<!-- MDB icon -->
 	<link rel="icon" href="img/logo1.ico" type="image/x-icon">
 	<!-- Font Awesome -->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Bootstrap core CSS -->
@@ -16,6 +17,7 @@
 	<link rel="stylesheet" href="css/mdb.min.css">
 	<!-- Your custom styles (optional) -->
 	<link rel="stylesheet" href="style.css">
+	
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -65,6 +67,7 @@
 			</div>
 		</nav>
 	</header>
+
  	<div class="wrapper">
 		<i class="fa fa-2x fa-facebook-square"></i>
 	<!--<i class="fa fa-2x fa-twitter-square"></i>-->
@@ -442,6 +445,7 @@
 		</div>
 	</div>
 
+	<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
 	<!-- Footer -->
 	<footer id="section5" class="page-footer font-small unique-color-dark pt-4">
@@ -526,6 +530,7 @@
 		<!-- Copyright -->
 
 	</footer>
+
 	<!-- Footer -->
 
 	<!-- jQuery -->
@@ -538,10 +543,8 @@
 	<script type="text/javascript" src="js/mdb.min.js"></script>
 	<!-- Your custom scripts (optional) -->
 	<script type="text/javascript"></script>
-
-
-
-
+	
+	
 
 	<script>
 		//parallax js
@@ -580,10 +583,11 @@
 				}
 			})
 		})
-	</script>
 
-	<!--SCROLLSPY & AFFIX WITH SMOOTH SCROLL-->
+	</script>
+<!--SCROLLSPY & AFFIX WITH SMOOTH SCROLL-->
 	<script>
+
 		$("#nav ul li a[href^='#']").on('click', function (e) {
 
 			// prevent default anchor click behavior
@@ -604,5 +608,21 @@
 
 		});
 	</script>
+<script>
+	$(window).scroll(function() {
+		if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+			$('#return-to-top').fadeIn(200);    // Fade in the arrow
+		} else {
+			$('#return-to-top').fadeOut(200);   // Else fade out the arrow
+		}
+	});
+	$('#return-to-top').click(function() {      // When arrow is clicked
+		$('body,html').animate({
+			scrollTop : 0                       // Scroll to top of body
+		}, 500);
+	});
+	</script>
+
+
 </body>
 </html>
