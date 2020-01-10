@@ -341,7 +341,7 @@ section.module.parallax p {
   margin: 0 auto;
 }*/
 
-/* SUPPORT BORDER-RADIUS / WEBKIT/MOZ/BACKGROUND-CLIP*/
+/* SUPPORT*/
 #text-parallax{
   border-radius: 0 0 78px 0;
   -webkit-background-clip: padding-box; 
@@ -658,8 +658,7 @@ h2::after {
 
     .box-um-tecnologia{
     flex-direction: column-reverse;
-    flex-wrap: wrap;
-    align-items: center;
+     align-items: center;
     justify-content: center;}
 
     .navbar-brand img {
