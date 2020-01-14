@@ -306,11 +306,7 @@ section.module.content:last-child {
   margin-bottom: 50px;
 }*/
 
-section.module.parallax {
-  text-align: center;
-  position: relative;
-  padding: 300px 0;
-}
+ 
 
 /*TEXT PARALLAX CUSTOMISER*/
 
@@ -328,17 +324,35 @@ section.module.parallax h4 {
 }
 
 /* TEXT ABOVE OF PARALLAX 1*/
-section.module.parallax p {
+section.module.parallax-1 p {
   z-index: 100;
   color: white;
   line-height: 0.9;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
 }
 
-/*
-.parallax-container {
-  max-width: 960px;
-  margin: 0 auto;
-}*/
+section.module.content {
+  background-color: rgb(255, 255, 255);
+     margin: 25px auto;
+    width:60%;
+    margin-top: 30px;
+     
+    }
+
+ .module.content h2 {
+margin:5px;
+
+}
+.module.content p {
+margin:5px;
+}
+
+ 
 
 /* SUPPORT*/
 #text-parallax{
@@ -346,15 +360,22 @@ section.module.parallax p {
   -webkit-background-clip: padding-box; 
   -moz-background-clip:padding; 
   background-clip: padding-box;
+  
+
 }
+
 section.module.parallax-1 {
 
   background-image: url("https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
   background-position:50% 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  background-blend-mode: screen;
+   background-blend-mode: screen;
+   text-align: center;
+   position: relative;
+   min-height: 700px;
+      background-attachment:fixed;
+    background-size: 100% auto;
    }
 
 .parallax-1 .parallax-container::after {
@@ -383,27 +404,39 @@ section.module.parallax-2 {
   background-repeat:no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: rgba(0, 123, 255, 0.4);
-  background-blend-mode: screen;
+   background-blend-mode: screen;
 
 }
 
 .parallax-2,
 .parallax-3 h1 {
   color: #ffffff;
+  text-align: center;
+
 }
 
 section.module.parallax-3 {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRpWQULm0SkNpPj3DNtdOmx8da8u8tENEhIMlMzW75k_G7Q7PA0");
-  background-position:50% 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color:cover;
-  background-blend-mode: screen;
-  height: 100vh;
- }
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRSxtUcTe5S3mmZ5TenCa-kaxktQVFV6luhP-vG40qvw07ryT-m");
+   background-repeat: no-repeat;
+        background-attachment:fixed;
+   min-height: 500px;
+background-position: center;
+background-size: cover;
+position: relative;
+ 
+}
+ 
+.parallax-3 .parallax-container p {
+  text-align: center;
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#fff;
+  position: absolute;
+}
 
+
+ 
 /* ============================================================
     FOOTER
   ============================================================ */
@@ -655,6 +688,12 @@ h2::after {
   font-size:14px;} }
 
   @media  (max-width:768px) { 
+    section.module.parallax-3 {
+height: 100%;
+background-size: 100%;
+background-attachment:fixed;
+padding: 0;
+    }
 
     .box-um-tecnologia{
     flex-direction: column-reverse;
@@ -677,9 +716,7 @@ h2::after {
       width: 90%;
       margin: 0 0 30px 0!important;}
     
-
-      
-      #return-to-top {
+#return-to-top {
         position: fixed;
         bottom: 20px;
         right: 20px;
@@ -732,7 +769,9 @@ h2::after {
 @media  (max-width:425px) { 
   section.module.parallax-1 {
 height: 100%;  
-background-size: initial;}}
+background-size: initial;}
+ 
+}
 
 
 
@@ -804,11 +843,6 @@ form {
 .textarea #message{
   height:70%;
 }
-
-.content p{
-  margin-bottom: 5%;
-}
-
 
 
   @media screen and (max-width: 480px) {
