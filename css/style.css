@@ -170,7 +170,6 @@ section.module h2 {
   font-family: "Roboto Slab", serif;
   font-size: 30px;
 }
-
 /*
 section.module p {
   margin-bottom: 40px;
@@ -188,9 +187,8 @@ section.module.content {
   margin-bottom: 20px;
   margin: 40px;
   }
-/*BOX TEXT*/
- 
- 
+
+  /*BOX TEXT*/
 
 .carreira-home {
   display: flex;
@@ -350,8 +348,6 @@ margin:5px;
   -webkit-background-clip: padding-box; 
   -moz-background-clip:padding; 
   background-clip: padding-box;
-  
-
 }
 
 section.module.parallax-1 {
@@ -395,7 +391,6 @@ margin:35px auto;
 line-height: 1.8;
 }
 
-
 section.module.parallax-2 {
   background-image: url("https://img.favpng.com/15/10/23/color-display-resolution-wallpaper-png-favpng-61D1WY9Kt9yE0cnk8Ckrqp5GC.jpg");
   background-position: cover;
@@ -403,7 +398,6 @@ section.module.parallax-2 {
   background-attachment: fixed;
   background-size: cover;
    background-blend-mode: screen;
-
 }
 
 .parallax-2,
@@ -417,17 +411,16 @@ section.module.parallax {
   padding: 300px 0;
 }
 section.module.parallax-3 {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRi9vaFWw8STEcuwffV0qAbMm7nkVVh4lNKJeMReCVO7PFtzrCk");
-  background-position: cover;
-  background-repeat: repeat;
+  background-image: url("http://themes.kadencethemes.com/virtue-premium/wp-content/uploads/2013/07/slide01.jpg");
+   background-repeat:no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: rgba(0,123,255,0.4);
-  background-blend-mode: screen;
+   background-blend-mode: screen;
+   background-position: 50% 50%;
+    visibility: visible;
+ 
     }
  
-
-
 
  
 /* ============================================================
@@ -481,15 +474,7 @@ footer .container-fluid p {
  }*/
 
 /* TESTEMONIAL **************************************/
-h2 {
-  color: #000;
-  font-size: 26px;
-  font-weight: 300;
-  position: relative;
-  margin: 0 0 50px 0;
-  text-transform: uppercase;
-  display: inline-block;
-}
+ 
 /*
 h2::after {
   content: "";
@@ -501,9 +486,18 @@ h2::after {
   left: 0;
   bottom: -20px;
 }*/
+ 
+
+#myCarousel h2{
+  font-size:35px;
+  text-align: center;
+  width:100%;
+  margin-bottom: 30px;
+  font-family: "Roboto Slab", serif;
+}
 
 .carousel {
-  margin: 50px auto;
+   margin: 50px auto;
 }
 
 .carousel .item {
@@ -667,34 +661,41 @@ h2::after {
 
 
 /*  MEDIA QUERY */
+ 
 
 /*Large devices (desktops, 992px and up)*/
 @media (max-width: 1024px) { 
   
-  .box-um-tecnologia, .box-dois-tecnologia, .box-limite-tecnologia, .box-numeros-tecnologia {
-  width: 100%;}
+    .box-um-tecnologia, .box-dois-tecnologia, .box-limite-tecnologia, .box-numeros-tecnologia {
+    width: 100%;}
 
-  .box-um-tecnologia{
-  margin-top: 15px;}
+    .box-um-tecnologia{
+    margin-top: 15px;}
 
-  .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
-  font-size:14px;} }
+    .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+    font-size:14px;} }
 
-  @media  (max-width:768px) { 
-   
+
+    @media  (max-width:768px) { 
+
+      section.module.parallax-3 {
+      background-attachment: scroll!important;
+      background-position: center!important;}
+      
+    .wrapper{display: none;}
 
     .box-um-tecnologia{
     flex-direction: column-reverse;
-     align-items: center;
+    align-items: center;
     justify-content: center;}
 
     .navbar-brand img {
     margin-left: 0;}
 
-  .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+    .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
     margin-left: 0;}
 
-  .carreira-home {
+    .carreira-home {
     display: flex;
     flex-direction: column;
     align-items: center;
