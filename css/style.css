@@ -418,11 +418,9 @@ section.module.parallax-3 {
    background-blend-mode: screen;
    background-position: 50% 50%;
     visibility: visible;
- 
-    }
+ }
  
 
- 
 /* ============================================================
     FOOTER
   ============================================================ */
@@ -682,7 +680,10 @@ h2::after {
       background-attachment: scroll!important;
       background-position: center!important;}
 
-    .wrapper{display: none;}
+      section.module.parallax-1 {
+      background-position: center;
+      }
+     .wrapper{display: none;}
 
     .box-um-tecnologia{
     flex-direction: column-reverse;
