@@ -7,10 +7,7 @@
  }
 body {
   font-family: "Quicksand", sans-serif;
-  margin: 0;
-  padding:0;
-   }
-
+  }
 
 .affix {
   top: 0;
@@ -22,6 +19,7 @@ body {
   position: relative;
   top: 50px;
 }
+
 
 /*SOCIAL ICONS*/
 .wrapper {
@@ -324,7 +322,7 @@ section.module.parallax h4 {
   margin-top: -150px;
 }
 
-/* TEXT ABOVE OF PARALLAX 1*/
+/* TEXT over OF PARALLAX 1*/
 
  
   .parallax-container span{
@@ -332,12 +330,11 @@ section.module.parallax h4 {
     width: calc(100% - 20px);
     position: relative;
      display: block;
-  z-index: 100;
-  color: white;
+   color: white;
    text-align: center;
    line-height: 1.4;
    font-size: 2rem;
-
+    overflow: hidden;
   }
  
  .module.content p {
@@ -393,6 +390,7 @@ margin: 30px;
 margin:35px auto;
 line-height: 1.8;
 }
+
 
 section.module.parallax-2 {
   background-image: url("https://img.favpng.com/15/10/23/color-display-resolution-wallpaper-png-favpng-61D1WY9Kt9yE0cnk8Ckrqp5GC.jpg");
@@ -754,8 +752,7 @@ grid-row: span 2;
   ;}
 
 .content-form{
-  margin-top: 5%;
-  position: relative;
+   position: relative;
   margin:0 auto;
   width:500px;
  text-align: center;
