@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Great+Vibes|Raleway|Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Quicksand:300&display=swap");
+
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
  }
-body {
+body, html {
   font-family: "Quicksand", sans-serif;
   }
 
@@ -108,21 +111,22 @@ i {
 }*/
 
 .navbar-scroll {
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgb(48, 48, 48);
   transition: background-color 0.5s;
   border-bottom: 1px solid rgba(0, 0, 0, 0.13);
   border-top: 1px solid rgba(0, 0, 0, 0.13);
+  text-align: center;
 }
 
 .navbar-brand img {
   margin-left: 150px;
 }
-
-.navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+ 
+.navbar.navbar-light .navbar-nav .nav-item .nav-link {
   color: rgb(0, 0, 0);
-  font-size: 20px;
-  margin: 0 5px;
-  font-weight: 400;
+   font-size:18px;
+  font-weight: bolder;
+  margin: 0 15px;
 }
 
 .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
@@ -130,7 +134,7 @@ i {
 }
 
 .navbar .navbar-collapse {
-  margin-right: 130px;
+  margin-right: 120px;
 }
 
 .navbar .navbar-collapse a::after {
@@ -196,6 +200,7 @@ section.module.content {
   /*BOX TEXT*/
 
 .carreira-home {
+  margin:auto;
   display: flex;
     flex-direction: column;
     align-items: center;
@@ -217,11 +222,12 @@ section.module.content {
 .titulo-home {
 color: #0AC5D4;
 font-size: 30px;
-margin: 0;
+margin:auto;
 width: 100%;
 text-align: center;}
 
 .box-um-tecnologia{
+  margin: auto;
   width: 991px;
   margin-top: 15px;
   display: flex;
@@ -754,7 +760,7 @@ grid-row: span 2;
 .content-form{
    position: relative;
   margin:0 auto;
-  width:500px;
+  max-width:500px;
  text-align: center;
 }
 
@@ -944,34 +950,47 @@ button.primary:hover,
 @media (max-width: 1024px) { 
    /*form*/
 
-   .content-form{
-    margin-top: 5%;
-    position: relative;
-    margin:0 auto;
-    width: 90%;
-    text-align: center;}
-
-
     .box-um-tecnologia, .box-dois-tecnologia, .box-limite-tecnologia, .box-numeros-tecnologia {
     width: 100%;}
 
     .box-um-tecnologia{
     margin-top: 15px;}
-
-    .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
-    font-size:14px;} }
+    }
 
 
-    @media  (max-width:768px) { 
+    @media  screen and (max-width:768px) { 
 
-      section.module.parallax-3 {
-      background-attachment: scroll!important;
-      background-position: center!important;}
+      .navbar .navbar-collapse {
+        text-align: center;
+      z-index: 2014;}
 
-      section.module.parallax-1 {
-      background-position: center;
-      }
-     .wrapper{display: none;}
+     
+       .navbar-dark .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }    
+    
+
+      .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+        font-size:1rem;}
+
+        .navbar .navbar-collapse {
+        margin-right:0;
+  }
+
+    .content-form{
+      position: relative;
+    margin:0 auto;
+    width: calc(95% - 20px);
+    text-align: center;}
+
+    section.module.parallax-3 {
+    background-attachment: scroll!important;
+    background-position: center!important;}
+
+    section.module.parallax-1 {
+    background-position: center;
+    }
+    .wrapper{display: none;}
 
     .box-um-tecnologia{
     flex-direction: column-reverse;
@@ -979,9 +998,6 @@ button.primary:hover,
     justify-content: center;}
 
     .navbar-brand img {
-    margin-left: 0;}
-
-    .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
     margin-left: 0;}
 
     .carreira-home {
@@ -1040,7 +1056,7 @@ button.primary:hover,
         top: 13px;
         font-size: 19px;
       }
-    }
+}
 
 
 @media  (max-width:425px) { 
