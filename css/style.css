@@ -295,7 +295,7 @@ text-align: center;}
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;}
+  text-align: center;}
 
 
   .titulo-bottom{
@@ -1040,7 +1040,6 @@ button.primary:hover,
         top: 13px;
         font-size: 19px;
       }
-
     }
 
 
@@ -1049,15 +1048,6 @@ button.primary:hover,
 height: 100%;  
 background-size: initial;}
 
-
-
-
- }
-
-
-
-
-@media screen and (max-width: 480px) {
 
 form > .fields {
 margin: -1.5rem 0 2rem -1.5rem;
@@ -1081,4 +1071,5 @@ form > .fields > .field.quarter {
 width: calc(100% - 1.5rem);
 }
 
-  }
+  
+}
