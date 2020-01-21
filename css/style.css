@@ -289,7 +289,8 @@ text-align: center;}
   color: #fff;
   font-size: 18px;
   font-weight: 600;
-  width:100px;
+  width:100%;
+  margin:auto;
   justify-content: space-around;
   padding-bottom: 164px;
 }
